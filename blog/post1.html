@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog Post - Paul Litscher</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="post1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">PL</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#blog" class="nav-link">Blog</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post-content">
+        <div class="container">
+            <header class="post-header">
+                <div class="post-meta">
+                    <span class="post-date">June 30, 2025</span>
+                    <span class="post-category">Development</span>
+                </div>
+                <h1 class="post-title">My First Blog Post</h1>
+                <p class="post-subtitle">Exploring the world of software development and my journey so far</p>
+            </header>
+            
+            <div class="post-content">
+                <p>Welcome to my first blog post! Here is where I'll share my thoughts on software development, the technologies I'm learning, and the projects I'm working on.</p>
+                
+                <h2>Why I Started This Blog</h2>
+                <p>As a Computer Engineering student, I've been diving deep into various programming languages and frameworks. This blog will not only keep me accountable when it comes to developing but serve as a platform to share my experiences, document my learning journey, and hopefully help others who are on similar paths.</p>
+                
+                <h2>Current Tech Stack</h2>
+                <p>Here's what I've been working with recently:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="file-name">tech_stack.py</span>
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                    </div>
+                    <pre><code class="language-python">
+<span class="keyword">class</span> <span class="class-name">TechStack</span>:
+    <span class="keyword">def</span> <span class="function-name">__init__</span>(<span class="self">self</span>):
+        <span class="self">self</span>.languages = [
+            <span class="string">"Python"</span>,
+            <span class="string">"HTML"</span>,
+            <span class="string">"JavaScript"</span>
+        ]
+        
+        <span class="self">self</span>.frameworks = [
+            <span class="string">"GraphQL"</span>
+        ]
+        
+        <span class="self">self</span>.tools = [
+            <span class="string">"Git"</span>,
+            <span class="string">"AWS"</span>,
+            <span class="string">"CSS"</span>
+        ]
+    
+    <span class="keyword">def</span> <span class="function-name">get_current_focus</span>(<span class="self">self</span>):
+        <span class="keyword">return</span> <span class="string">"Amazon Web Services & Web Development"</span>
+
+<span class="comment"># Initialize my tech stack</span>
+my_stack = TechStack()
+<span class="keyword">print</span>(my_stack.get_current_focus())
+                    </code></pre>
+                </div>
+                
+                <h2>Recent Projects</h2>
+                <p>I've been working on some interesting projects lately:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="file-name">projects.md</span>
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                    </div>
+                    <pre><code class="language-markdown">
+<span class="markdown-header"># Recent Works</span>
+
+<span class="markdown-header">## Public Datasets to Analytics Pipeline Using AWS</span>
+- <span class="markdown-list">Ingest raw data (s3) -> Transform (Glue) -> Load (Redshift) -> Run SQL queries & Visualize</span>
+- <span class="markdown-list">Currently working on setting up root account</span>
+- <span class="markdown-list">Deciding on project application</span>
+
+<span class="markdown-header">## This Portfolio Website</span>
+- <span class="markdown-list">Built with HTML, CSS, and JavaScript</span>
+- <span class="markdown-list">Focusing on a responsive & versatile design</span>
+- <span class="markdown-list">Website deployment to a live environment</span>
+                    </code></pre>
+                </div>
+                
+                <h2>What's Next?</h2>
+                <p>I'm planning to dive deeper into:</p>
+                <ul>
+                    <li>All things AWS with a focus in the stack i'll be using</li>
+                    <li>Full-stack web development</li>
+                    <li>System design and architecture</li>
+                    <li>Open source contributions on Github (Less important)</li>
+                </ul>
+                
+                <p>I'll be sharing my progress, challenges, and insights here on this blog. Stay tuned for more posts about specific projects, tutorials, and thoughts on the latest technologies.</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="file-name">next_steps.py</span>
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                    </div>
+                    <pre><code class="language-python">
+<span class="keyword">def</span> <span class="function-name">future_plans</span>():
+    <span class="keyword">return</span> {
+        <span class="string">"blog_posts"</span>: <span class="string">"Regular updates about my journey"</span>,
+        <span class="string">"Cloud Computing"</span>: <span class="string">"AWS and the data analytics project"</span>,
+        <span class="string">"learning"</span>: <span class="string">"New languages and frameworks"</span>,
+        <span class="string">"community"</span>: <span class="string">"Contributing to open source"</span>
+    }
+
+<span class="comment"># Stay connected!</span>
+<span class="keyword">print</span>(<span class="string">"Thanks for reading my first blog post!"</span>)
+                    </code></pre>
+                </div>
+            </div>
+            
+            <footer class="post-footer">
+                <div class="post-navigation">
+                    <a href="../index.html#blog" class="back-to-blog">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Blog
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Paul Litscher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Litscher - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">PL</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Paul Litscher</h1>
+                <p class="hero-subtitle">Computer Engineering Student</p>
+                <p class="hero-description">Passionate about creating innovative solutions and learning new technologies</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-photo-container">
+                    <img src="images/personal_picture.jpg" alt="Paul Litscher" class="profile-photo" id="profilePhoto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Engineering student with a strong passion for software development, having started my journey in tech in the fall of 2023. My experience has grown from academic projects and early scripting tasks to full-stack development and hands-on engineering at a big tech company.</p>
+                    <p>I've built systems ranging from data structure–driven game engines to predictive machine learning models, and developed robust APIs designed to handle thousands of requests efficiently.</p>
+                    <p>I'm most confident working with Python, GraphQL, C, and Ruby, but I also enjoy expanding my skill set, recently diving into technologies like CSS and SQL. I care deeply about clean code, performance optimization, and building scalable software that lasts.</p>
+                    <p>Outside of formal roles, I contribute to cloud computing projects and stay involved in the developer community through hackathons and student organizations at McGill University. I'm always looking for the next opportunity to build smarter, cleaner, and more impactful systems.</p>
+                </div>
+                <div class="skills">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-item-wide">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <span>HTML (JavaScript &amp; CSS embedded)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-gem"></i>
+                            <span>Ruby on Rails</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/predictive_retail_analytics_project.jpg" alt="ML Predictive Analytics in Retail">
+                    </div>
+                    <div class="project-content">
+                        <h3>ML Predictive Analytics in Retail</h3>
+                        <p>A linear regression pipeline in Python to predict anual customer expenditure using using data inputs such as country and price of first order.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Linear Regression</span>
+                            <span class="tech-tag">Numpy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Paullitsc/ML-Predictive-Analytics-Retail" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ig_db_project.png" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Instagram Profile Database</h3>
+                        <p>Command program that manages a CSV database to track mock Instagram account records. </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">.csv</span>
+                            <span class="tech-tag">Vim Made</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Paullitsc/Instagram_Profile_Database" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations Please reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:paul.litscher2@gmail.com">paul.litscher2@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (508) 259-3175</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boston, MA</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://your-render-app-name.onrender.com/contact" method="POST" target="_blank">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-content">
+                <div class="blog-intro">
+                    <p>Thoughts on technology, innovation, and the future of digital transformation.</p>
+                    <a href="blog/index.html" class="btn btn-secondary" style="margin-top: 1rem;">View All Posts</a>
+                </div>
+                <div class="blog-posts">
+                    <article class="blog-post">
+                        <div class="post-meta">
+                            <span class="post-date">June 30, 2025</span>
+                            <span class="post-category">Development</span>
+                        </div>
+                        <h3>My First Blog Post</h3>
+                        <p>Exploring the world of software development and my journey so far. A deep dive into my tech stack, recent projects, and future plans.</p>
+                        <a href="blog/post1.html" class="read-more">Read More →</a>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-category">Technology</span>
+                        </div>
+                        <h3>Emerging Technologies in 2025</h3>
+                        <p>Exploring the latest trends and technologies that are shaping the future of software development.</p>
+                        <a href="#" class="read-more">Coming Soon →</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Paul Litscher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
