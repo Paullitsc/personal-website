@@ -100,20 +100,35 @@ contactForm.addEventListener('submit', function(e) {
         return;
     }
     
-    // Simulate form submission
+    // Submit to backend
     const submitBtn = this.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
     
-    // Simulate API call
-    setTimeout(() => {
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        this.reset();
+    // Send to Flask backend
+    fetch('https://personal-website-wqbo.onrender.com/contact', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        } else {
+            alert('Error sending message: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error sending message. Please try again.');
+    })
+    .finally(() => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-    }, 2000);
+    });
 });
 
 // Email validation function
