@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# --- CONFIGURE MAIL SETTINGS ---
+# Configure mail settings
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True

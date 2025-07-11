@@ -220,17 +220,6 @@ body {
     transform: translateY(-2px);
 }
 
-.post-share {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.post-share span {
-    color: #888;
-    font-size: 0.9rem;
-}
-
 /* Override navbar for dark theme */
 .navbar {
     background: rgba(30, 30, 30, 0.95) !important;

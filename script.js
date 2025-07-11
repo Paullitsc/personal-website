@@ -107,10 +107,19 @@ contactForm.addEventListener('submit', function(e) {
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
     
-    // Send to Flask backend
+    // Send to Flask backend as JSON
+    const payload = {
+        name,
+        email,
+        subject,
+        message
+    };
     fetch('https://personal-website-wqbo.onrender.com/contact', {
         method: 'POST',
-        body: formData
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
     })
     .then(response => response.json())
     .then(data => {

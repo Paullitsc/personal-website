@@ -62,75 +62,6 @@
     font-size: 1.1rem;
 }
 
-/* Reading Notice */
-.reading-notice {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
-    border: 2px solid #f59e0b;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    backdrop-filter: blur(10px);
-}
-
-.notice-icon {
-    width: 40px;
-    height: 40px;
-    background: #f59e0b;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-    flex-shrink: 0;
-}
-
-.notice-content h3 {
-    color: #f59e0b;
-    margin-bottom: 0.75rem;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.notice-content p {
-    color: #e2e8f0;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.notice-content strong {
-    color: #fbbf24;
-}
-
-.reading-link {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.simple-link {
-    color: var(--ai-accent);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.simple-link:hover {
-    text-decoration: underline;
-}
-
-.note {
-    color: #94a3b8;
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
 /* Intro Section */
 .intro-section {
     background: rgba(99, 102, 241, 0.05);
@@ -592,34 +523,7 @@
     margin: 0;
 }
 
-.simple-example {
-    background: rgba(6, 182, 212, 0.05);
-    border: 1px solid rgba(6, 182, 212, 0.2);
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin: 2rem 0;
-}
 
-.simple-example h3 {
-    color: var(--ai-accent);
-    margin-bottom: 1rem;
-}
-
-.simple-example ol {
-    color: #cbd5e1;
-    line-height: 1.6;
-    margin: 1rem 0;
-}
-
-.simple-example li {
-    margin-bottom: 0.5rem;
-}
-
-.simple-example strong {
-    color: var(--ai-accent);
-}
-
-/* Inline Links */
 .inline-link {
     color: var(--ai-accent);
     text-decoration: none;
@@ -677,11 +581,6 @@
     .quote-attribution {
         align-items: flex-start;
         padding-left: 0;
-    }
-    
-    .reading-notice {
-        flex-direction: column;
-        text-align: center;
     }
     
     .notice-icon {
