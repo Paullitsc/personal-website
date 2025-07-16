@@ -526,6 +526,44 @@ section {
     min-height: 120px;
 }
 
+/* Disabled Contact Form Notice */
+.contact-form-disabled {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-notice {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.form-notice i {
+    font-size: 3rem;
+    color: #f59e0b;
+    margin-bottom: 1rem;
+}
+
+.form-notice h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.form-notice p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-notice .btn {
+    margin-top: 1rem;
+}
+
 /* Blog Section */
 .blog-intro {
     text-align: center;
