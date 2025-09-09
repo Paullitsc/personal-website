@@ -11,15 +11,15 @@ A personal website and blog built with HTML, CSS, and JavaScript, featuring an A
 ├── styles.css            # Main site stylesheet
 ├── script.js             # Main JavaScript (handles UI, contact form, etc.)
 ├── images/               # Image assets
-├── blog/                 # Blog section (AI learning guide, posts, blog CSS)
+├── blog/                 # Blog section
 │   ├── index.html        # Blog index
 │   ├── ai-learning-guide.html  # AI learning guide post
 │   └── ...               # Other blog posts & CSS
 ├── contact-backend/      # Flask backend for contact form
 │   ├── app.py            # Flask application
-│   └── venv/             # Python virtual environment (optional)
+│   └── venv/             # Python virtual environment
 │   └── ...
-├── requirements.txt      # Frontend dependencies (if any)
+├── requirements.txt      # Frontend dependencies
 └── README.md             # This file
 ```
 
