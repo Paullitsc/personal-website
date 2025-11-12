@@ -17,7 +17,6 @@ A personal website and blog built with HTML, CSS, and JavaScript, featuring an A
 │   └── ...               # Other blog posts & CSS
 ├── contact-backend/      # Flask backend for contact form
 │   ├── app.py            # Flask application
-│   └── venv/             # Python virtual environment
 │   └── ...
 ├── requirements.txt      # Frontend dependencies
 └── README.md             # This file
@@ -46,11 +45,39 @@ python -m http.server 8000
 ```
 
 ### Backend
+1. Navigate to the backend directory:
 ```bash
 cd contact-backend
-pip install -r requirements.txt
+```
+
+2. Create a virtual environment (recommended):
+```bash
+# On macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
+
+# On Windows:
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r ../requirements.txt
+```
+
+4. Set up environment variables (create a `.env` file or export them):
+```bash
+export MAIL_USERNAME=your-email@gmail.com
+export MAIL_PASSWORD=your-app-password
+```
+
+5. Run the Flask application:
+```bash
 python app.py
 ```
+
+**Note:** The virtual environment (`venv/`) is excluded from git. Each developer should create their own virtual environment following the steps above.
 
 ---
 
